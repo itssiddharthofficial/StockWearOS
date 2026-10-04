@@ -1,0 +1,24 @@
+# Signing material — never commit. The release keystore and its password live
+# only on the build machine; publishing them would let anyone ship an update
+# that Android accepts as this app.
+*.keystore
+*.jks
+*.pem
+*.key
+keystore.properties
+
+# Local SDK paths
+local.properties
+
+# Build output
+build/
+.gradle/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# IDE
+.idea/
+*.iml
+.DS_Store
